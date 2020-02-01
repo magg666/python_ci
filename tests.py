@@ -1,11 +1,7 @@
-import unittest
+from main import make_new_string
 
 
-
-class MyTestCase(unittest.TestCase):
-    def test_something(self):
-        self.assertEqual(True, False)
+def test_something():
+    assert make_new_string('err') == 'ttt'
 
 
-if __name__ == '__main__':
-    unittest.main()
